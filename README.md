@@ -24,12 +24,12 @@ Navigate to the project folder:
 cd Algorithm
 ```
 
-# Run Python files:
+## Run Python files:
 ```bash
 python filename.py
 ```
 
-# Run C# files
+## Run C# files
 ```bash
 dotnet new console -o MyApp
 cd MyApp
