@@ -1,0 +1,22 @@
+# Remove Duplicates from Sorted Array
+# - Given a **sorted integer array** `nums` in non-decreasing order.  
+# - Remove duplicates **in-place** such that each unique element appears only once.  
+# - Keep the **relative order** of elements the same.  
+# - Return `k` = the number of unique elements.  
+# - Modify `nums` so that the first `k` elements contain the unique values.  
+
+from typing import List
+
+class Solution:
+    def removeDuplicates(self, nums: List[int]) -> int:
+        if not nums:
+            return 0
+        
+        i = 0
+        
+        for j in range(1, len(nums)):
+            if nums[j] != nums[i]:
+                i += 1
+                nums[i] = nums[j]
+        return i + 1
+

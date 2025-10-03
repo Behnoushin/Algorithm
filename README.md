@@ -11,14 +11,17 @@ The goal of this project is to improve **programming skills** and **problem-solv
 ## 🚀 Getting Started 
 
 ## Getting Started
-1. Clone this repository:
+```bash
+Clone this repository:
+git clone https://github.com/Behnoushin/Algorithm
+```
 
 ```bash
-git clone https://github.com/Behnoushin/Algorithm
-
 Navigate to the project folder:
 cd Algorithm
+```
 
+```bash
 Run Python files:
 python filename.py
 ```
