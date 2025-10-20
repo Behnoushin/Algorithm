@@ -6,6 +6,7 @@
 // - Example: [2, 5, 8, 3, 7] → Output: 3
 
 using System;
+using System.Linq;
 
 class Program
 {
@@ -18,16 +19,12 @@ class Program
 
     static int CountAboveAverage(int[] arr)
     {
-        int sum = 0;
-        for (int i = 0; i < arr.Length; i++)
-            sum += arr[i];
-
-        double average = (double)sum / arr.Length;
+        double average = arr.Average();
         int count = 0;
 
-        for (int i = 0; i < arr.Length; i++)
+        foreach (int num in arr)
         {
-            if (arr[i] > average)
+            if (num > average)
                 count++;
         }
 
