@@ -9,10 +9,10 @@ class Solution:
         words = s.split()
         if not words:
             return 0
-        
+
         total_length = sum(len(word) for word in words)
         average_length = total_length / len(words)
-        
+
         count = 0
         for word in words:
             if len(word) > average_length:
