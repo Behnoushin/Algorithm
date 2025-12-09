@@ -5,4 +5,4 @@
 import math
 
 def circleArea(radius: float) -> float:
-    return math.pi * radius ** 2
+    return math.pi * (radius ** 2)
