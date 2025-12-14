@@ -11,3 +11,13 @@ class Solution
         return n * (n + 1) * (2 * n + 1) / 6;
     }
 }
+
+class program
+{
+    static void main()
+    {
+        Solution sol = new Solution();
+        int N = 5;
+        Console.WriteLine(sol.SumOfSquares(N));
+    }
+}
